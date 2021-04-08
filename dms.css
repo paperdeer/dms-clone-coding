@@ -1,0 +1,203 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+.allscreen{
+    display: flex;
+    flex-direction: column;
+    width: 1523.2px;
+    height: 100vh;
+    background-image: linear-gradient(180deg,#078f91,#19b6b6);
+}
+.mainscreen{
+    width: auto;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    width: 75rem;
+    height: 150px;
+    /* margin-left: 168px;
+    margin-right: 168px; */
+}
+.logoandname{
+    display: flex;
+    width: 171.04px;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    text-decoration: none;
+}
+.dmslink{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    height: 55px;
+}
+.DMSfont{
+    width: 66.04px;
+    height: 34.4px;
+    font-size: 1.875rem;
+    font-family: 'NanumSquare', sans-serif;
+
+}
+.logoandlogin{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logoimg{
+    width: 3.4375rem;
+    height: 3.4375rem;
+}
+.logo{
+    width: 75rem;
+    height: 9.375rem;
+}
+.name{
+    color: #fff;
+    margin-left: 3.125rem;
+    font-weight: 1000;
+}
+.login{
+    display: flex;
+    width: 502px;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginbtn{
+    width: 9.375rem;
+    height: 3.125rem;
+    border-radius: 1.5625rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0/20%);
+    background-color: #19b6b6;
+    font-size: 1rem;
+}
+.loginfont{
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 700;
+}
+button{
+    font: 400 13.3333px Arial;
+    text-rendering: auto;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 700;
+}
+.maininfo{
+    display: flex;
+    width: 1200px;
+    height: 642px;
+}
+.foodlist{
+    display: flex;
+    height: 6.125rem;
+    width: 100%;
+    margin-top: 37px;
+    flex-direction: column;
+    /* margin-top: 37px; */
+    justify-content: space-between;
+}
+.todaylist{
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 800;
+    
+}
+.today{
+    color:hsla(0,0%,100%,.7);
+    font-size: 1.5rem;
+    margin-top: 15.6px;
+    font-family: 'NanumSquare', sans-serif;
+}
+.menubox{
+    display: flex;
+    height: 23.875rem;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.eachmenubox{
+    position: relative;
+    transition: .45s;
+    width: 219.2px !important;
+    height: 19.75rem;
+    border-radius: 10px;
+    background-color: #0c9799;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+}
+.nextbefore{
+    display: flex;
+    align-items: center;
+    /* margin-top: 15px; */
+    margin-bottom: 60px;
+}
+.before,
+.next{
+    border: none;
+    width: 9.375rem;
+    height: 3.125rem;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 1.5625rem;
+    background-color: #fff;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    transition: .3s;
+    color: #19b6b6;
+    outline: none;
+    font-size: 1.125rem;
+    font-family: 'NanumSquare', sans-serif;
+}
+.imginmenu{
+    width: 438px;
+    height: 409.1px;
+    /* margin-bottom: 40px; */
+    /* margin-left: 44.4px; */
+}
+.menuboxleft{
+    display: flex;
+    align-items: center;
+    width: 762px;
+}
+.eachmenubox:nth-child(1){
+    margin-right: 37.2px;
+}
+.eachmenubox:nth-child(2){
+    margin-right:37.2px;
+}
+/* .eachmenubox:nth-child(3){
+    margin: 0 20px;
+} */
+.menuboxright{
+    margin-left: 30px;
+}
+.foodbox{
+    width: 732px;
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menuall{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
