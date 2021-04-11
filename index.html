@@ -8,7 +8,7 @@
     <link href="dms.css" rel="stylesheet">
 </head>
 <body>
-    <div class="allscreen">
+    <div class="firstscreen">
         <header class="head">
             <div class="mainscreen">
                 <div class="menu">
@@ -21,18 +21,46 @@
                             <span class="submit"><p class="loginfont">신청화면</p></span>
                             <span class="notice"><p class="loginfont">공지사항</p></span>
                             <span class="more"><p class="loginfont">부가기능</p></span>
-                            <button class="loginbtn">로그인</button>
+                            <div class="modalbtn"><button class="loginbtn">로그인</button>
+                                <div id="mymodal" class="modal">
+                                    <div class="modalcontent">
+                                        <img class="modalclose" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAFVBMVEWenp6enp5HcEyenp6enp6enp6enp4J5OulAAAABnRSTlMt6wDPWCReAgVHAAAARklEQVQI13VPQQ4AMATrMP9/8mR0hyZzoIoC22E0+IbnIoGVjnJDXAQj0REPNM1KsGsmc1RaKioPs09d5kVf9ut9er/8dwDfIAHbs1aKJAAAAABJRU5ErkJggg==">
+                                        <!-- <div class="modalclose">&times;</div> -->
+                                        <div class="modalhead">
+                                            <img class="modallogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAjVBMVEVHcEwZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrYZtrajZrk0AAAALnRSTlMA8qMe1y4N6wiskxYn6d7B+LYSnEYDUYp8ZtLvPFhf/HDMu4JBx/XksTI3THVrN5yk5gAABOhJREFUaN7Fm22jckAQhhUhCiURvVfqdLL//+c9T0olu7OzC2e+HnWd7LrnntmhKHJhL3zXcU79TFW6jJHvkWds+j+dYa9DUorLshPs8UIqsf9tHfu7J9Rw561i5yfCjHjdGna9I2BoWdAC1cw0wg3npjeMnd7OBBVGZDeItQ8JQUcaNqUpqpUSodhYowawA2tDxKO2nF37RDKGxxrY5ZDUiMlMEjubgE/OMLxtw6EDXSMlZysX+srLS5xn4GKc1o2KVL+Ujn586Np4gZezYAGKlD+opGfLgxZla+K08QatmxdSn1E1hJ71czTla+MB0sbkwFQlOxpDHwxhJVXDHvDpMfyP6/CtAuRsBIoUYqmCTHBzPLQRfC405OZcxaCcXQVFarcScCljUABUAZESFCAbJCcfu2wOitReWHLnsIQXe3EBiVTPv0q4JA8kP92RCpsoqfQC3mtSrLIK+pqzhIeagtbBez+V0+jcqIeKwB8c4vVZ0EPh9tZ9e+WrDWek/gBfSIJ7JntfaSW9hz9anUDRQZWEsEfbLT4utR43IHcU8z3OdTALSVD+TmX5S0vyVEfC4M9WKtl3Htyt64g2LH+Xqtk1Pv1RXu7xPFRdj0YB38s9UzwxBxmYC316VWFUbIYtZkX07VnKeBjVxJBL1TQyQPNlFx4NEuYe26MptK/3/BH3p6SWer8xCXhjIJ03gIXhGGyrlp02YKni9T3YHo2nNsBKTo68To+8R4sgMCFuLjezvRjW5WrrYEJgcCGwIoUyvyy+Z5KEBy7KPWxrgJ/Ejrmkj/ngexLV80TLb4bw0/bvU9JR4EKq4JIQY1TeKR8JLso9+8C8vMe3ZusPSUeDC9XV6cZwfOBVwGZWsnUC4KLcC7ZatYXJKyT175akGLgo99axWCFpVzOJKLjwEu9dsuP2dah7sgw+LS0E+uGe5vnj6HK1kWEqyuA+zxYXmpjjjnuENrJ0pwwe8h250DkAoLRpFYxEa1w0y+46N1UNPRpYUQYuAh1JHdc8n4EVHayMMBscaAyvdlxzXAPssrCLGNFSpYMHKP2mCoe51VAFUA1wqgsc11RqJwSY5XJ7elUbDanaiQ52gusEBdatnoAt4YPjXKX44CAWOpHhgzWWHHyBbbrrHyB8NQSmuNxvsCfkhvBgRVmA4Kkn5IZEwEoiAH4VlA2AgzEaPOYeQ4iATQMJxhy8tADWMkyybhyMnRVoDmxTumilv7cFNlOoAzd3N9uWwMqI7QzWdzu8bwvMO6vsdwt+Vy+dgu1w/GnbuwKPSgMVnYEHX/68I/C1UkZ0Aqa1qDoA0483Li2DA5aft1oF65nDagqZLYKZkwJexQY1CWb29Wk2qDnwgNX6o09jJA2Bl33BhrknD05M/mGXtmb1oi7y4NdJMPOwC2qYT/fSYHKDD7t4Qw2/riyYRKrKKsNRQw2zy/ehMhJMyIbVAEQOAj86UhJgocqUGj++Z1wbAW98welI++OxlAf3rFrzoLJgXonYEhgzqcZbcQmwhpzNg+2hMDheKI1ELAYWGfji9PNdAXCzA/SvhMMDTxp/ZWD5UNIzCB628pJEfqTgAuD2XgsZWb7NBJ+7ehvlG3xU/gacBn8ETszOwKlUK6J+BOc/An+N43UILpe9XYJL71l5nYI/JzNMpeN4dlX6SvehWo5j1fqGfxsIb3ZJFWILAAAAAElFTkSuQmCC">
+                                            <p class="modallogin">로그인</p>
+                                        </div>
+                                        <div class="modalbottom">
+                                            <div class="loginnow">
+                                                <input class="modalinput" placeholder="아이디">
+                                                <input class="modalinput" placeholder="비밀번호">
+                                                <button class="modalloginbtn">로그인</button>
+                                                <div class="logintype">
+                                                    <div class="auto">
+                                                        <input class="checkbox" type="checkbox">
+                                                        <span class="autofont">자동로그인</span>
+                                                    </div>
+                                                    <span class="forget">비밀번호를 잊으셨나요?</span>
+                                                </div>
+                                            </div>
+                                            <div class="signup">
+                                                <span class="yet">아직 DMS 회원이 아니시라면?</span>
+                                                <span class="signupnow">회원가입</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="mainscreenbottom">
                     <div class="maininfo">
                         <div class="foodbox">
-                            
                             <div class="menuall">
                                 <div class="menuboxleft">
                                     <div class="todaylist">오늘의 메뉴</div>
-                                    <span class="today">2021년 4월 9일 목요일</span>
+                                    <span class="today">2021년 4월 8일 목요일</span>
                                 <div class="foodlist">
                                     <div class="eachmenubox">
                                         <div class="infobox">
@@ -69,6 +97,14 @@
                 </div>
             </div>
         </header>
+    </div>
+    <div class="secondscreen">
+        <div class="secondmain">
+            <div class="secondsubmitfont">
+                <span class="submitscreen">신청화면</span>
+                <span class="easy">기숙사 생활에 관련된 편의 기능을 이용해 보세요</span>
+            </div>
+        </div>
     </div>
 </body>
 <script src="dms.js"></script>
