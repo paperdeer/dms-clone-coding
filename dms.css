@@ -1,4 +1,7 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.body{
+    overflow: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +16,7 @@
 .firstscreen{
     display: flex;
     flex-direction: column;
-    width: 1523.2px;
+    width: 1519.2px;
     height: 100vh;
     background-image: linear-gradient(180deg,#078f91,#19b6b6);
 }
@@ -414,9 +417,9 @@ button{
     height: 792px;
 }
 .secondmain{
-    di
     width: 1200px;
     height: 100%;
+    margin: 0 161.6px;
 }
 .secondsubmitfont{
     display: flex;
@@ -426,11 +429,90 @@ button{
     justify-content: space-between;
     width: 100%;
     height: 177px;
-    border-bottom: 93px;
+    padding-bottom: 93px;
 }
 .submitscreen{
     color: #19b6b6;
     font-family: 'NanumSquareEB', sans-serif;
     font-size: 2.25rem;
     font-weight: 600;
+}
+.submits{
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.easy{
+    width: auto;
+    color: #9e9e9e;
+    font-family: 'NanumSquareB', sans-serif;
+    /* font-size: 16px; */
+    font-weight: 600;
+}
+.submitseachbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 280px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #000;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.submitimg{
+    display: inline-block;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+.sminfobox{
+    width: 100%;
+    height: 65.6px;
+    text-align: center;
+}
+.submitboxinfo{
+    width: auto;
+    line-height: 2.0625rem;
+    font-size: 1.125rem;
+    font-size: 18px;
+    font-family: 'NanumSquareR', sans-serif;
+}
+.submitboxfont{
+    font-size: 1.875rem;
+    font-family: 'NanumSquareB', sans-serif;
+    font-weight: 600;
+}
+.firstsubmit{
+    /* width: 210.06px; */
+    width: auto;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.submitboxbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.0625rem;
+    color: #616161;
+    text-decoration: none;
+    border: none;
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: #fff;
+    border-radius: 1.5625rem;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-family: 'NanumSquareB' sans-serif;
 }
